@@ -9,15 +9,20 @@
 </head>
 <h1>Air Fryer Calculator</h1>
 <body>
+  <div class="container">
   <p>Uh oh! Looks like someone is hungry, but their food doesn't have the directions for air fryers! Don't worry, just tell us the directions for the oven and we'll tell you how to air fry it. :)</p>
-  <script src="script.js"></script>
-</body>
-  <form action="/action_page.php" target="_blank">
-    <label for="otemp">Oven Temperature:</label><br>
-    <input type="text" id="otemp" name="otemp"><br>
-    <label for="otime">Oven Time:</label><br>
-    <input type="text" id="otime" name="otime"><br><br>
-    <input type="submit" value="Convert">
-  </form>
+ <label for="ovenTemp">Oven Temperature (°F):</label>
+<input type="number" id="ovenTemp" placeholder="Enter oven temperature">
+<br>
+<label for="ovenTime">Oven Time (minutes):</label>
+<input type="number" id="ovenTime" placeholder="Enter oven time">
+<br>
+<button onclick="convertTime()">Convert</button>
 
+<div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
